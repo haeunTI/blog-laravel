@@ -1,0 +1,38 @@
+<div class="page-content" style="margin-top:-40px;">
+
+    <div class="row profile-body">
+    
+        <div class="col-md-12 col-xl-12 middle-wrapper">
+            <div class="row">
+            <div class="card">
+                <div class="card-body">
+
+                    <h6 class="card-title">Ubah Item</h6>
+
+                    <form class="forms-sample" method="POST" action="{{ route('item.edit.data') }}" enctype="multipart/form-data" id="myForm">
+                        @csrf
+                        <input type="hidden" name="id_item" value="{{ $data->id }}">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="mb-3 form-group">
+                                        <label for="pict_property" class="form-label">Foto (Main)</label>
+                                        <input class="form-control" type="file" id="pict_property" name="pict_property">
+                                        <img id="
+                                        " alt="">
+                                    </div>
+                                </div>
+                                
+
+                        <!-- <button type="submit" class="btn btn-primary me-2">Submit form</button> -->
+                        </form>
+
+                </div>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+    
+
+</div>
